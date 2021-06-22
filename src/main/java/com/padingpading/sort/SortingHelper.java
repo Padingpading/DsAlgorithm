@@ -1,6 +1,5 @@
 package com.padingpading.sort;
 
-import com.padingpading.sort.insert.InsertSort;
 import com.padingpading.sort.insert.InsertSort2;
 import com.padingpading.sort.meger.MergeSort;
 
@@ -27,7 +26,8 @@ public class SortingHelper {
         if(sortName.equals("InsertSort2")){
             InsertSort2.sort(arr);
         } else if(sortName.equals("MergeSort")) {
-            MergeSort.sort(arr);
+            int sort = MergeSort.sort(arr);
+            System.out.println(sort);
         }
         long endTime = System.nanoTime();
         double time = (endTime - startTime) / 1000000000.0;

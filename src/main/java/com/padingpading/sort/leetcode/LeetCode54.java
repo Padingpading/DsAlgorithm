@@ -1,4 +1,4 @@
-package com.padingpading.sort.meger;
+package com.padingpading.sort.leetcode;
 
 
 import com.padingpading.sort.ArrayGenerator;
@@ -11,35 +11,32 @@ import java.util.Arrays;
  * @description
  * @date 2021/6/17
  */
-public class MergeSort {
+public class LeetCode54 {
 
-    public MergeSort() {
+    public LeetCode54() {
     }
 
 
-    public static <E extends Comparable<E>> int sort(E[] arr) {
-        return sort(arr, 0, arr.length - 1);
+    public static <E extends Comparable<E>> void sort(E[] arr) {
+        sort(arr, 0, arr.length - 1);
     }
 
-    public static <E extends Comparable<E>> int sort(E[] arr, int l, int r) {
+    public static <E extends Comparable<E>> void sort(E[] arr, int l, int r) {
         //结束条件
-        if (l >= r) return 0;
+        if (l >= r) return;
         //
-        int res = 0;
         int mid = l + (r - l) / 2;
-        res+= sort(arr, l, mid);
-        res+= sort(arr, mid + 1, r);
+        sort(arr, l, mid);
+        sort(arr, mid + 1, r);
         if(arr[mid].compareTo(arr[mid+1])>0)
-            res+=merge(arr, l, mid, r);
-        return res;
+        merge(arr, l, mid, r);
     }
 
 
-    private static <E extends Comparable<E>> int merge(E[] arr, int l, int mid, int r) {
+    private static <E extends Comparable<E>> void merge(E[] arr, int l, int mid, int r) {
         //创建临时数组，从这个数组中拿数比较
         E[] temp = Arrays.copyOfRange(arr, l, r + 1);
         int i = l, j = mid + 1;
-        int res = 0;
         for (int k = l; k <= r; k++) {
             //arr[i]和arr[j]
             //注:这里还有个l的偏移量
@@ -56,18 +53,18 @@ public class MergeSort {
                 arr[k] = temp[i - l];
                 i++;
             } else {
-                res = mid-i+1;
                 arr[k] = temp[j - l];
                 i++;
             }
         }
-        return res;
     }
 
 
     public static void main(String[] args) {
+
         int n = 100000;
         Integer[] arr = ArrayGenerator.generateRandomArray(n, n);
         SortingHelper.sortTest("MergeSort", arr);
+
     }
 }
