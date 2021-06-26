@@ -2,6 +2,10 @@ package com.padingpading.sort;
 
 import com.padingpading.sort.insert.InsertSort2;
 import com.padingpading.sort.meger.MergeSort;
+import com.padingpading.sort.quick.QuickSort;
+import com.padingpading.sort.quick.QuickSort2;
+import com.padingpading.sort.quick.QuickSort4;
+import com.padingpading.sort.quick.QuickSort5;
 
 import java.sql.Time;
 
@@ -28,6 +32,14 @@ public class SortingHelper {
         } else if(sortName.equals("MergeSort")) {
             int sort = MergeSort.sort(arr);
             System.out.println(sort);
+        } else if(sortName.equals("QuickSort")) {
+            QuickSort.sort(arr);
+        } else if(sortName.equals("QuickSort2")) {
+            QuickSort2.sort(arr);
+        } else if(sortName.equals("QuickSort4")) {
+            QuickSort4.sort(arr);
+        } else if(sortName.equals("QuickSort5")) {
+            QuickSort5.sort(arr);
         }
         long endTime = System.nanoTime();
         double time = (endTime - startTime) / 1000000000.0;
