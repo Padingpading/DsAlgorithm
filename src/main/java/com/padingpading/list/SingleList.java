@@ -14,11 +14,13 @@ public class SingleList<T> {
     class Node {
         private T value;
         private Node next;
+
         //创建节点时赋值,当前节点的下一个指针为null
         public Node(T value) {
             this.value = value;
             this.next = null;
         }
+
         @Override
         public String toString() {
             return "Node{" +
@@ -55,9 +57,9 @@ public class SingleList<T> {
      * @param value
      */
     public void addTailNode(T value) {
-    //创建节点
+        //创建节点
         Node node = new Node(value);
-    //如果节点是否存在,不存在直接放到头部
+        //如果节点是否存在,不存在直接放到头部
 
         if (null == head) {
 
@@ -67,7 +69,7 @@ public class SingleList<T> {
 
         }
 
-//找到最后一个节点
+    //找到最后一个节点
 
         Node last = head;
 
@@ -77,7 +79,7 @@ public class SingleList<T> {
 
         }
 
-//将新节点放入最后一个节点的next
+    //将新节点放入最后一个节点的next
 
         last.next = node;
 
@@ -91,61 +93,33 @@ public class SingleList<T> {
      */
 
     public void addNodeAtIndex(T value, int index) {
-
-//校验存放的位置
-
+        //校验存放的位置
         if (index < 0 || index > size()) {
-
             throw new IndexOutOfBoundsException("IndexOutOfBoundsException");
-
         }
-
-//
-
+        //
         if (index == 0) {
-
             addHeadNode(value);
-
         } else if (index == size()) {
-
-//放入尾部
-
+        //放入尾部
             addTailNode(value);
-
         } else {
-
-//插入中间位置
-
+            //插入中间位置
             Node node = new Node(value);
-
             int position = 0;
-
             Node cur = head;//标记当前节点
-
             Node pre = null;//记录当前位置节点
-
             while (cur != null) {
-
                 if (position == index) {
-
                     node.next = cur;
-
                     pre.next = node;
-
                     return;
-
                 }
-
                 pre = cur;
-
                 cur = cur.next;
-
                 position++;
-
             }
-
         }
-
     }
 
     public void deleteNodeAtIndex(int index) {
