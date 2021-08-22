@@ -1,5 +1,6 @@
 package com.padingpading.skiplist;
 
+import java.awt.*;
 import java.util.Random;
 
 /**
@@ -18,7 +19,7 @@ public class SkipList {
     //索引的层级数,默认为1
     private int levelCount = 1;
 
-    private Random random;
+    private Random random = new Random();
 
     class Node {
         //结点值
@@ -129,5 +130,13 @@ public class SkipList {
             }
         }
         return level;
+    }
+
+    public static void main(String[] args) {
+        SkipList skipList = new SkipList();
+        skipList.insert(5);
+        skipList.insert(10);
+        skipList.insert(12);
+        Node head = skipList.head;
     }
 }

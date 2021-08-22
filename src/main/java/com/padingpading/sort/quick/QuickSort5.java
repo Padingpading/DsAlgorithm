@@ -17,7 +17,6 @@ public class QuickSort5 {
     }
 
     public static <E extends Comparable<E>> void sort(E[] arr) {
-        ThreadLocal
         sort(arr, 0, arr.length - 1);
     }
     private static <E extends Comparable<E>> void sort(E[] arr, int l, int r) {
