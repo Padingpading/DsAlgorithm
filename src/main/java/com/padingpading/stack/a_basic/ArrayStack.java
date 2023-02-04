@@ -1,4 +1,4 @@
-package com.padingpading.stack;
+package com.padingpading.stack.a_basic;
 
 import java.util.Arrays;
 
@@ -76,6 +76,7 @@ public class ArrayStack<T> {
         return size == 0;
     }
 
+    @Override
     public String toString() {
         if (size == 0) {
             return "[]";

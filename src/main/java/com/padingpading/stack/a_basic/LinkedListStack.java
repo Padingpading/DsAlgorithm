@@ -1,4 +1,4 @@
-package com.padingpading.stack;
+package com.padingpading.stack.a_basic;
 
 import com.padingpading.list.LinkedList;
 

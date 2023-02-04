@@ -1,6 +1,6 @@
 package com.padingpading.stack;
 
-import com.padingpading.list.LinkedList;
+import com.padingpading.stack.a_basic.LinkedListStack;
 
 /**
  * @author libin

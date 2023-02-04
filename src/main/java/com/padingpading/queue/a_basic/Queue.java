@@ -1,4 +1,4 @@
-package com.padingpading.queue;
+package com.padingpading.queue.a_basic;
 
 /**
  * @author libin

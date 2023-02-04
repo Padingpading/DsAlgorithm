@@ -1,6 +1,4 @@
-package com.padingpading.queue;
-
-import javax.swing.*;
+package com.padingpading.queue.a_basic;
 
 /**
  * @author libin
