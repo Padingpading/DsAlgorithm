@@ -1,4 +1,4 @@
-package com.padingpading.list.reverse;
+package com.padingpading.list.single.a_reverse;
 
 import com.padingpading.list.leetcode.ListNode;
 
@@ -35,8 +35,6 @@ public class ReverseLink {
     }
 
     public static void main(String[] args) {
-
-
 
     }
 }

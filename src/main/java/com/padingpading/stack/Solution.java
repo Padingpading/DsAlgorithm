@@ -1,8 +1,5 @@
 package com.padingpading.stack;
 
-import javafx.application.Preloader;
-
-import javax.swing.plaf.nimbus.State;
 import java.util.Stack;
 
 /**

@@ -1,9 +1,7 @@
 package com.padingpading.stack;
 
 import com.padingpading.list.LinkedList;
-import jdk.internal.org.objectweb.asm.tree.MultiANewArrayInsnNode;
 
-import java.security.PublicKey;
 
 /**
  * @author libin

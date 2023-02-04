@@ -2,7 +2,6 @@ package com.padingpading.sort.insert;
 
 import com.padingpading.sort.ArrayGenerator;
 import com.padingpading.sort.SortingHelper;
-import com.sun.org.apache.bcel.internal.generic.SWAP;
 
 /**
  * @author libin

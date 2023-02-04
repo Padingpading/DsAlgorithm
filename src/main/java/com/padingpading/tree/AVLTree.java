@@ -202,7 +202,8 @@ public class AVLTree<K extends Comparable<K>, V> {
                 retNode = leftNode;
             } else {
                 //左右子树都不为空
-                Node successor = minium(node.right);
+                //Node successor = minium(node.right);
+                Node successor = null;
                 //删除最小的结点
                 successor.right = remove(node.right, successor.key);
                 successor.left = node.left;

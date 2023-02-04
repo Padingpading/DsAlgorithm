@@ -1,7 +1,5 @@
 package com.padingpading.queue;
 
-import com.padingpading.stack.LinkedListStack;
-import com.sun.org.apache.xerces.internal.dom.PSVIAttrNSImpl;
 
 /**
  * @author libin

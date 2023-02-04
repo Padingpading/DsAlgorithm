@@ -1,6 +1,5 @@
 package com.padingpading.sort.selection;
 
-import com.sun.org.apache.bcel.internal.generic.SWAP;
 
 import javax.swing.*;
 

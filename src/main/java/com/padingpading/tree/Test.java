@@ -1,11 +1,7 @@
 package com.padingpading.tree;
 
-import sun.swing.BakedArrayList;
 
-import javax.swing.*;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Random;
 
 /**
