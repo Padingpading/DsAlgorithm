@@ -47,6 +47,5 @@ public class RingArray_Queue {
 		private int nextIndex(int i) {
 			return i < limit - 1 ? i + 1 : 0;
 		}
-
 	}
 }
