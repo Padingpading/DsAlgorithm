@@ -7,15 +7,12 @@ import com.padingpading.sort.SortingHelper;
 import java.util.Arrays;
 
 /**
- * @author libin
- * @description
- * @date 2021/6/17
+ * 归并排序。
  */
 public class MergeSort {
 
     public MergeSort() {
     }
-
 
     public static <E extends Comparable<E>> int sort(E[] arr) {
         return sort(arr, 0, arr.length - 1);
